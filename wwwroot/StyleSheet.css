@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+
+@keyframes AnimFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+:root {
+}
+
+*, *::before, *::after {
+    scroll-behavior: smooth;
+    /*font-family: Arial, Verdana, sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;*/
+}
+
+body {
+
+}
+
+.bo-navbar {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    transition: background-color 0.5s;
+}
+
+    .bo-navbar:hover {
+        background-color: rgb(25, 25, 25, 5%);
+    }
+
+.bo-index-banner {
+    background-color: white; /* Fallback color */
+    background-image: url("Images/AdobeStock_407822327.jpeg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.bo-fade-in {
+    animation-name: AnimFadeIn;
+    animation-delay: 0;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
