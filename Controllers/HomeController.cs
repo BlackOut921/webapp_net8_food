@@ -8,5 +8,14 @@ namespace webapp_net8_food.Controllers
 	{
 		[HttpGet]
 		public IActionResult Index() => View();
+
+		[HttpGet]
+		public IActionResult About() => View();
+
+		[HttpGet]
+		public IActionResult Menu() => View();
+
+		[HttpGet]
+		public IActionResult Contact() => View();
 	}
 }

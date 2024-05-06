@@ -56,3 +56,15 @@ body {
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
+
+.bo-fade-scroll {
+    position: relative;
+    right: -50%;
+    opacity: 0;
+    transition: opacity 2s, right 1s;
+}
+
+.bo-fade-scroll.show {
+    opacity: 1;
+    right: 0;
+}
