@@ -23,7 +23,6 @@
 }
 
 body {
-
 }
 
 .bo-navbar {
@@ -57,14 +56,35 @@ body {
     animation-timing-function: ease-in-out;
 }
 
-.bo-fade-scroll {
-    position: relative;
-    right: -50%;
-    opacity: 0;
-    transition: opacity 2s, right 1s;
+.bo-scroll-target {
+
 }
 
-.bo-fade-scroll.show {
-    opacity: 1;
-    right: 0;
+.bo-scroll-fade {
+    opacity: 0;
+    transition: opacity 2s;
 }
+
+    .bo-scroll-fade.show {
+        opacity: 1;
+    }
+
+.bo-scroll-slide-right {
+    position: relative;
+    right: -50%;
+    transition: right 1s;
+}
+
+    .bo-scroll-slide-right.show {
+        right: 0;
+    }
+
+.bo-scroll-slide-left {
+    position: relative;
+    left: -50%;
+    transition: left 1s;
+}
+
+    .bo-scroll-slide-left.show {
+        left: 0;
+    }
