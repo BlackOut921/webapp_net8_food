@@ -10,6 +10,18 @@
     }
 }
 
+@keyframes AnimSlideIn {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
 :root {
 }
 
@@ -18,7 +30,12 @@
 }
 
 body {
-
+    background-color: #F9F6EE; /* Fallback */
+    background-image: url("Images/AdobeStock_274849477.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bo-navbar {
@@ -42,6 +59,17 @@ body {
     overflow: hidden;
 }
 
+.bo-banner-txt {
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    animation-name: AnimSlideIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
 .bo-fade-in {
     animation-name: AnimFadeIn;
     animation-delay: 0;
@@ -53,34 +81,28 @@ body {
 }
 
 .bo-scroll-target {
-
 }
-
-.bo-scroll-fade {
-    opacity: 0;
-    transition: opacity 2s;
-}
-
-    .bo-scroll-fade.show {
-        opacity: 1;
-    }
 
 .bo-scroll-slide-right {
+    opacity: 0;
     position: relative;
     right: -50%;
-    transition: right 1s;
+    transition: right 1s, opacity 1s;
 }
 
     .bo-scroll-slide-right.show {
         right: 0;
+        opacity: 1;
     }
 
 .bo-scroll-slide-left {
+    opacity: 0;
     position: relative;
     left: -50%;
-    transition: left 1s;
+    transition: left 1s, opacity 1s;
 }
 
     .bo-scroll-slide-left.show {
         left: 0;
+        opacity: 1;
     }

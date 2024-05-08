@@ -2,10 +2,38 @@
 	//
 }
 
-<div class="container">
-	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-		<div class="col">_socials</div>
-		<div class="col">_col</div>
-		<div class="col">_col</div>
+<div class="container py-3 d-flex flex-column flex-sm-row justify-content-around align-items-center align-items-sm-start gap-3">
+	<!-- Small menu -->
+	<div class="p-2">
+		<h5 class="display-5">Menu</h5>
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<a asp-controller="Home" asp-action="Index" class="nav-link link-secondary">Home</a>
+			</li>
+			<li class="nav-item">
+				<a asp-controller="Home" asp-action="About" class="nav-link link-secondary">About</a>
+			</li>
+			<li class="nav-item">
+				<a asp-controller="Home" asp-action="Menu" class="nav-link link-secondary">Menu</a>
+			</li>
+			<li class="nav-item">
+				<a asp-controller="Home" asp-action="Contact" class="nav-link link-secondary">Contact</a>
+			</li>
+		</ul>
+	</div>
+	<!-- Socials -->
+	<div class="p-2">
+		<h5 class="display-5">Socials</h5>
+		<ul class="nav flex-column">
+			<li class="nav-item">
+				<a href="#" class="nav-link link-secondary">Facebook</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link link-secondary">Instagram</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link link-secondary">Twitter</a>
+			</li>
+		</ul>
 	</div>
 </div>
