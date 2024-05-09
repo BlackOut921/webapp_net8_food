@@ -30,7 +30,7 @@
 }
 
 body {
-    background-color: #F9F6EE; /* Fallback */
+    background-color: white; /* Fallback */
     background-image: url("Images/AdobeStock_274849477.jpeg");
     background-attachment: fixed;
     background-position: center;
@@ -82,6 +82,15 @@ body {
 
 .bo-scroll-target {
 }
+
+    .bo-scroll-target > img {
+        min-width: 30%;
+        max-width: 50%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
 
 .bo-scroll-slide-right {
     opacity: 0;
