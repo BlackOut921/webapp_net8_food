@@ -4,7 +4,7 @@
             entry.target.classList.add("show");
         }
         /*else {
-            entry.target.classList.remove("show");
+            entry.target.classList.remove("show"); //This will hide element
         }*/
     });
 });
@@ -17,3 +17,9 @@ if (_fadeElements.length > 0) {
         _observer.observe(i);
     });
 }
+
+//data- test
+//const test = document.querySelector(".bo-data");
+//alert(test.dataset.test);
+//Another way using:
+//<element>.getAttribute("data-<name>")

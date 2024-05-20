@@ -115,3 +115,26 @@ body {
         left: 0;
         opacity: 1;
     }
+
+[class*="bo-img-mask-"] {
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    object-fit: contain;
+}
+
+.bo-img-mask-box {
+    -webkit-mask-image: url("Images/AdobeStock_489858118_edit.png");    
+    mask-image: url("Images/AdobeStock_489858118_edit.png");    
+}
+
+.bo-img-mask-round {
+    -webkit-mask-image: url("Images/AdobeStock_489858230_edit.png");
+    mask-image: url("Images/AdobeStock_489858230_edit.png");
+}
+
+.bo-img-mask-blob {
+    -webkit-mask-image: url("Images/blob-haikei.png");
+    mask-image: url("Images/blob-haikei.png");
+}
