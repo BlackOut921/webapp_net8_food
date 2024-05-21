@@ -38,6 +38,10 @@ body {
     background-size: cover;
 }
 
+main {
+    min-height: 75vh;
+}
+
 .bo-navbar {
     background-color: transparent;
     backdrop-filter: blur(20px);
